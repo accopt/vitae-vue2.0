@@ -1,0 +1,29 @@
+{
+  "name": "nuxt3-starter-ts",
+  "private": true,
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "preview": "nuxi preview",
+    "lint": "eslint . --ext .ts,.vue",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@element-plus/nuxt": "^1.1.4",
+    "@pinia/nuxt": "latest",
+    "axios": "latest",
+    "element-plus": "^2.11.7",
+    "nuxt": "latest",
+    "pinia": "latest",
+    "vue": "latest"
+  },
+  "devDependencies": {
+    "@nuxt/eslint-config": "latest",
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "autoprefixer": "latest",
+    "eslint": "^9.0.0",
+    "postcss": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  }
+}
