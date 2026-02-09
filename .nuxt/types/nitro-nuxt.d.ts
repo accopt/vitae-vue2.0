@@ -1,7 +1,7 @@
 
 /// <reference path="app.config.d.ts" />
 /// <reference path="runtime-config.d.ts" />
-/// <reference types="D:/桌面/biyesheji/nuxt3-starter-ts-full/node_modules/@nuxt/nitro-server/dist/index.mjs" />
+/// <reference types="D:/桌面/biyesheji/vitae-vue2.0/node_modules/@nuxt/nitro-server/dist/index.mjs" />
 /// <reference path="nitro-middleware.d.ts" />
 
 import type { RuntimeConfig } from 'nuxt/schema'
