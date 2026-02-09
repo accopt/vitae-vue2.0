@@ -14,6 +14,13 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 interface _GlobalComponents {
+  'BasicInfoForm': typeof import("../../components/BasicInfoForm.vue")['default']
+  'ModuleForm': typeof import("../../components/ModuleForm.vue")['default']
+  'ModuleSelector': typeof import("../../components/ModuleSelector.vue")['default']
+  'ModuleSelectorAndForm': typeof import("../../components/ModuleSelectorAndForm.vue")['default']
+  'ResumeForm': typeof import("../../components/ResumeForm.vue")['default']
+  'ResumePreview': typeof import("../../components/ResumePreview.vue")['default']
+  'TemplateSelector': typeof import("../../components/TemplateSelector.vue")['default']
   'NuxtWelcome': typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']
   'NuxtLayout': typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
   'NuxtErrorBoundary': typeof import("../../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
@@ -28,410 +35,410 @@ interface _GlobalComponents {
   'NuxtPicture': typeof import("../../node_modules/nuxt/dist/app/components/nuxt-stubs")['NuxtPicture']
   'ElAffix': typeof import("../../node_modules/element-plus/es/components/affix/index")['ElAffix']
   'ElAlert': typeof import("../../node_modules/element-plus/es/components/alert/index")['ElAlert']
-  'ElAnchor': typeof import("../../node_modules/element-plus/es/components/anchor/index")['ElAnchor']
   'ElAnchorLink': typeof import("../../node_modules/element-plus/es/components/anchor/index")['ElAnchorLink']
+  'ElAnchor': typeof import("../../node_modules/element-plus/es/components/anchor/index")['ElAnchor']
   'ElAutoResizer': typeof import("../../node_modules/element-plus/es/components/table-v2/index")['ElAutoResizer']
   'ElAside': typeof import("../../node_modules/element-plus/es/components/container/index")['ElAside']
-  'ElAutocomplete': typeof import("../../node_modules/element-plus/es/components/autocomplete/index")['ElAutocomplete']
-  'ElBacktop': typeof import("../../node_modules/element-plus/es/components/backtop/index")['ElBacktop']
   'ElAvatar': typeof import("../../node_modules/element-plus/es/components/avatar/index")['ElAvatar']
+  'ElAutocomplete': typeof import("../../node_modules/element-plus/es/components/autocomplete/index")['ElAutocomplete']
+  'ElBadge': typeof import("../../node_modules/element-plus/es/components/badge/index")['ElBadge']
+  'ElBacktop': typeof import("../../node_modules/element-plus/es/components/backtop/index")['ElBacktop']
   'ElBreadcrumb': typeof import("../../node_modules/element-plus/es/components/breadcrumb/index")['ElBreadcrumb']
   'ElBreadcrumbItem': typeof import("../../node_modules/element-plus/es/components/breadcrumb/index")['ElBreadcrumbItem']
-  'ElBadge': typeof import("../../node_modules/element-plus/es/components/badge/index")['ElBadge']
-  'ElCalendar': typeof import("../../node_modules/element-plus/es/components/calendar/index")['ElCalendar']
   'ElButtonGroup': typeof import("../../node_modules/element-plus/es/components/button/index")['ElButtonGroup']
+  'ElCalendar': typeof import("../../node_modules/element-plus/es/components/calendar/index")['ElCalendar']
   'ElButton': typeof import("../../node_modules/element-plus/es/components/button/index")['ElButton']
   'ElCarousel': typeof import("../../node_modules/element-plus/es/components/carousel/index")['ElCarousel']
+  'ElCard': typeof import("../../node_modules/element-plus/es/components/card/index")['ElCard']
   'ElCarouselItem': typeof import("../../node_modules/element-plus/es/components/carousel/index")['ElCarouselItem']
   'ElCascader': typeof import("../../node_modules/element-plus/es/components/cascader/index")['ElCascader']
-  'ElCheckTag': typeof import("../../node_modules/element-plus/es/components/check-tag/index")['ElCheckTag']
   'ElCascaderPanel': typeof import("../../node_modules/element-plus/es/components/cascader-panel/index")['ElCascaderPanel']
   'ElCheckbox': typeof import("../../node_modules/element-plus/es/components/checkbox/index")['ElCheckbox']
   'ElCheckboxGroup': typeof import("../../node_modules/element-plus/es/components/checkbox/index")['ElCheckboxGroup']
+  'ElCheckTag': typeof import("../../node_modules/element-plus/es/components/check-tag/index")['ElCheckTag']
   'ElCheckboxButton': typeof import("../../node_modules/element-plus/es/components/checkbox/index")['ElCheckboxButton']
-  'ElCard': typeof import("../../node_modules/element-plus/es/components/card/index")['ElCard']
   'ElCol': typeof import("../../node_modules/element-plus/es/components/col/index")['ElCol']
   'ElCollapse': typeof import("../../node_modules/element-plus/es/components/collapse/index")['ElCollapse']
-  'ElColorPicker': typeof import("../../node_modules/element-plus/es/components/color-picker/index")['ElColorPicker']
   'ElCollapseTransition': typeof import("../../node_modules/element-plus/es/components/collapse-transition/index")['ElCollapseTransition']
-  'ElColorPickerPanel': typeof import("../../node_modules/element-plus/es/components/color-picker-panel/index")['ElColorPickerPanel']
   'ElCollapseItem': typeof import("../../node_modules/element-plus/es/components/collapse/index")['ElCollapseItem']
-  'ElContainer': typeof import("../../node_modules/element-plus/es/components/container/index")['ElContainer']
-  'ElDatePicker': typeof import("../../node_modules/element-plus/es/components/date-picker/index")['ElDatePicker']
+  'ElColorPicker': typeof import("../../node_modules/element-plus/es/components/color-picker/index")['ElColorPicker']
   'ElConfigProvider': typeof import("../../node_modules/element-plus/es/components/config-provider/index")['ElConfigProvider']
+  'ElContainer': typeof import("../../node_modules/element-plus/es/components/container/index")['ElContainer']
   'ElCountdown': typeof import("../../node_modules/element-plus/es/components/countdown/index")['ElCountdown']
-  'ElDatePickerPanel': typeof import("../../node_modules/element-plus/es/components/date-picker-panel/index")['ElDatePickerPanel']
-  'ElDialog': typeof import("../../node_modules/element-plus/es/components/dialog/index")['ElDialog']
-  'ElDescriptions': typeof import("../../node_modules/element-plus/es/components/descriptions/index")['ElDescriptions']
+  'ElColorPickerPanel': typeof import("../../node_modules/element-plus/es/components/color-picker-panel/index")['ElColorPickerPanel']
+  'ElDatePicker': typeof import("../../node_modules/element-plus/es/components/date-picker/index")['ElDatePicker']
   'ElDescriptionsItem': typeof import("../../node_modules/element-plus/es/components/descriptions/index")['ElDescriptionsItem']
+  'ElDatePickerPanel': typeof import("../../node_modules/element-plus/es/components/date-picker-panel/index")['ElDatePickerPanel']
   'ElDivider': typeof import("../../node_modules/element-plus/es/components/divider/index")['ElDivider']
-  'ElDropdownItem': typeof import("../../node_modules/element-plus/es/components/dropdown/index")['ElDropdownItem']
+  'ElDescriptions': typeof import("../../node_modules/element-plus/es/components/descriptions/index")['ElDescriptions']
+  'ElDialog': typeof import("../../node_modules/element-plus/es/components/dialog/index")['ElDialog']
   'ElDrawer': typeof import("../../node_modules/element-plus/es/components/drawer/index")['ElDrawer']
-  'ElForm': typeof import("../../node_modules/element-plus/es/components/form/index")['ElForm']
   'ElDropdown': typeof import("../../node_modules/element-plus/es/components/dropdown/index")['ElDropdown']
-  'ElFooter': typeof import("../../node_modules/element-plus/es/components/container/index")['ElFooter']
+  'ElDropdownItem': typeof import("../../node_modules/element-plus/es/components/dropdown/index")['ElDropdownItem']
   'ElEmpty': typeof import("../../node_modules/element-plus/es/components/empty/index")['ElEmpty']
-  'ElFormItem': typeof import("../../node_modules/element-plus/es/components/form/index")['ElFormItem']
+  'ElFooter': typeof import("../../node_modules/element-plus/es/components/container/index")['ElFooter']
   'ElDropdownMenu': typeof import("../../node_modules/element-plus/es/components/dropdown/index")['ElDropdownMenu']
+  'ElFormItem': typeof import("../../node_modules/element-plus/es/components/form/index")['ElFormItem']
+  'ElForm': typeof import("../../node_modules/element-plus/es/components/form/index")['ElForm']
   'ElHeader': typeof import("../../node_modules/element-plus/es/components/container/index")['ElHeader']
   'ElIcon': typeof import("../../node_modules/element-plus/es/components/icon/index")['ElIcon']
   'ElImage': typeof import("../../node_modules/element-plus/es/components/image/index")['ElImage']
-  'ElInput': typeof import("../../node_modules/element-plus/es/components/input/index")['ElInput']
-  'ElInputNumber': typeof import("../../node_modules/element-plus/es/components/input-number/index")['ElInputNumber']
-  'ElInputTag': typeof import("../../node_modules/element-plus/es/components/input-tag/index")['ElInputTag']
   'ElImageViewer': typeof import("../../node_modules/element-plus/es/components/image-viewer/index")['ElImageViewer']
+  'ElInput': typeof import("../../node_modules/element-plus/es/components/input/index")['ElInput']
+  'ElInputTag': typeof import("../../node_modules/element-plus/es/components/input-tag/index")['ElInputTag']
+  'ElInputNumber': typeof import("../../node_modules/element-plus/es/components/input-number/index")['ElInputNumber']
   'ElLink': typeof import("../../node_modules/element-plus/es/components/link/index")['ElLink']
   'ElMain': typeof import("../../node_modules/element-plus/es/components/container/index")['ElMain']
-  'ElMenu': typeof import("../../node_modules/element-plus/es/components/menu/index")['ElMenu']
   'ElMention': typeof import("../../node_modules/element-plus/es/components/mention/index")['ElMention']
+  'ElMenu': typeof import("../../node_modules/element-plus/es/components/menu/index")['ElMenu']
+  'ElMenuItemGroup': typeof import("../../node_modules/element-plus/es/components/menu/index")['ElMenuItemGroup']
+  'ElOption': typeof import("../../node_modules/element-plus/es/components/select/index")['ElOption']
   'ElMenuItem': typeof import("../../node_modules/element-plus/es/components/menu/index")['ElMenuItem']
-  'ElPopover': typeof import("../../node_modules/element-plus/es/components/popover/index")['ElPopover']
+  'ElOptionGroup': typeof import("../../node_modules/element-plus/es/components/select/index")['ElOptionGroup']
+  'ElOverlay': typeof import("../../node_modules/element-plus/es/components/overlay/index")['ElOverlay']
   'ElPagination': typeof import("../../node_modules/element-plus/es/components/pagination/index")['ElPagination']
-  'ElPopper': typeof import("../../node_modules/element-plus/es/components/popper/index")['ElPopper']
+  'ElPopover': typeof import("../../node_modules/element-plus/es/components/popover/index")['ElPopover']
+  'ElPageHeader': typeof import("../../node_modules/element-plus/es/components/page-header/index")['ElPageHeader']
+  'ElPopconfirm': typeof import("../../node_modules/element-plus/es/components/popconfirm/index")['ElPopconfirm']
   'ElPopperContent': typeof import("../../node_modules/element-plus/es/components/popper/index")['ElPopperContent']
   'ElPopperArrow': typeof import("../../node_modules/element-plus/es/components/popper/index")['ElPopperArrow']
+  'ElPopper': typeof import("../../node_modules/element-plus/es/components/popper/index")['ElPopper']
   'ElPopperTrigger': typeof import("../../node_modules/element-plus/es/components/popper/index")['ElPopperTrigger']
-  'ElProgress': typeof import("../../node_modules/element-plus/es/components/progress/index")['ElProgress']
   'ElRadio': typeof import("../../node_modules/element-plus/es/components/radio/index")['ElRadio']
+  'ElProgress': typeof import("../../node_modules/element-plus/es/components/progress/index")['ElProgress']
   'ElRadioButton': typeof import("../../node_modules/element-plus/es/components/radio/index")['ElRadioButton']
-  'ElRadioGroup': typeof import("../../node_modules/element-plus/es/components/radio/index")['ElRadioGroup']
-  'ElRate': typeof import("../../node_modules/element-plus/es/components/rate/index")['ElRate']
   'ElResult': typeof import("../../node_modules/element-plus/es/components/result/index")['ElResult']
-  'ElRow': typeof import("../../node_modules/element-plus/es/components/row/index")['ElRow']
+  'ElRate': typeof import("../../node_modules/element-plus/es/components/rate/index")['ElRate']
+  'ElRadioGroup': typeof import("../../node_modules/element-plus/es/components/radio/index")['ElRadioGroup']
   'ElScrollbar': typeof import("../../node_modules/element-plus/es/components/scrollbar/index")['ElScrollbar']
+  'ElRow': typeof import("../../node_modules/element-plus/es/components/row/index")['ElRow']
   'ElSegmented': typeof import("../../node_modules/element-plus/es/components/segmented/index")['ElSegmented']
-  'ElSelectV2': typeof import("../../node_modules/element-plus/es/components/select-v2/index")['ElSelectV2']
   'ElSelect': typeof import("../../node_modules/element-plus/es/components/select/index")['ElSelect']
-  'ElSkeleton': typeof import("../../node_modules/element-plus/es/components/skeleton/index")['ElSkeleton']
-  'ElSkeletonItem': typeof import("../../node_modules/element-plus/es/components/skeleton/index")['ElSkeletonItem']
+  'ElSelectV2': typeof import("../../node_modules/element-plus/es/components/select-v2/index")['ElSelectV2']
   'ElSlider': typeof import("../../node_modules/element-plus/es/components/slider/index")['ElSlider']
-  'ElSpace': typeof import("../../node_modules/element-plus/es/components/space/index")['ElSpace']
+  'ElSkeletonItem': typeof import("../../node_modules/element-plus/es/components/skeleton/index")['ElSkeletonItem']
   'ElSplitter': typeof import("../../node_modules/element-plus/es/components/splitter/index")['ElSplitter']
   'ElSplitterPanel': typeof import("../../node_modules/element-plus/es/components/splitter/index")['ElSplitterPanel']
   'ElStep': typeof import("../../node_modules/element-plus/es/components/steps/index")['ElStep']
+  'ElSkeleton': typeof import("../../node_modules/element-plus/es/components/skeleton/index")['ElSkeleton']
+  'ElSpace': typeof import("../../node_modules/element-plus/es/components/space/index")['ElSpace']
   'ElStatistic': typeof import("../../node_modules/element-plus/es/components/statistic/index")['ElStatistic']
   'ElSteps': typeof import("../../node_modules/element-plus/es/components/steps/index")['ElSteps']
+  'ElTabPane': typeof import("../../node_modules/element-plus/es/components/tabs/index")['ElTabPane']
   'ElSubMenu': typeof import("../../node_modules/element-plus/es/components/menu/index")['ElSubMenu']
   'ElSwitch': typeof import("../../node_modules/element-plus/es/components/switch/index")['ElSwitch']
-  'ElTabPane': typeof import("../../node_modules/element-plus/es/components/tabs/index")['ElTabPane']
-  'ElTable': typeof import("../../node_modules/element-plus/es/components/table/index")['ElTable']
   'ElTableColumn': typeof import("../../node_modules/element-plus/es/components/table/index")['ElTableColumn']
-  'ElMenuItemGroup': typeof import("../../node_modules/element-plus/es/components/menu/index")['ElMenuItemGroup']
   'ElTableV2': typeof import("../../node_modules/element-plus/es/components/table-v2/index")['ElTableV2']
+  'ElText': typeof import("../../node_modules/element-plus/es/components/text/index")['ElText']
+  'ElTable': typeof import("../../node_modules/element-plus/es/components/table/index")['ElTable']
   'ElTabs': typeof import("../../node_modules/element-plus/es/components/tabs/index")['ElTabs']
   'ElTag': typeof import("../../node_modules/element-plus/es/components/tag/index")['ElTag']
-  'ElOption': typeof import("../../node_modules/element-plus/es/components/select/index")['ElOption']
-  'ElTimeSelect': typeof import("../../node_modules/element-plus/es/components/time-select/index")['ElTimeSelect']
-  'ElOverlay': typeof import("../../node_modules/element-plus/es/components/overlay/index")['ElOverlay']
+  'ElTimePicker': typeof import("../../node_modules/element-plus/es/components/time-picker/index")['ElTimePicker']
   'ElTimeline': typeof import("../../node_modules/element-plus/es/components/timeline/index")['ElTimeline']
-  'ElOptionGroup': typeof import("../../node_modules/element-plus/es/components/select/index")['ElOptionGroup']
-  'ElPageHeader': typeof import("../../node_modules/element-plus/es/components/page-header/index")['ElPageHeader']
+  'ElTimeSelect': typeof import("../../node_modules/element-plus/es/components/time-select/index")['ElTimeSelect']
   'ElTooltip': typeof import("../../node_modules/element-plus/es/components/tooltip/index")['ElTooltip']
-  'ElTimelineItem': typeof import("../../node_modules/element-plus/es/components/timeline/index")['ElTimelineItem']
   'ElTour': typeof import("../../node_modules/element-plus/es/components/tour/index")['ElTour']
-  'ElTransfer': typeof import("../../node_modules/element-plus/es/components/transfer/index")['ElTransfer']
+  'ElTimelineItem': typeof import("../../node_modules/element-plus/es/components/timeline/index")['ElTimelineItem']
   'ElTourStep': typeof import("../../node_modules/element-plus/es/components/tour/index")['ElTourStep']
-  'ElTree': typeof import("../../node_modules/element-plus/es/components/tree/index")['ElTree']
+  'ElTransfer': typeof import("../../node_modules/element-plus/es/components/transfer/index")['ElTransfer']
   'ElIconAddLocation': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['AddLocation']
-  'ElTreeV2': typeof import("../../node_modules/element-plus/es/components/tree-v2/index")['ElTreeV2']
+  'ElTree': typeof import("../../node_modules/element-plus/es/components/tree/index")['ElTree']
   'ElIconAim': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Aim']
   'ElTreeSelect': typeof import("../../node_modules/element-plus/es/components/tree-select/index")['ElTreeSelect']
-  'ElUpload': typeof import("../../node_modules/element-plus/es/components/upload/index")['ElUpload']
   'ElIconAlarmClock': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['AlarmClock']
+  'ElIconArrowLeft': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ArrowLeft']
+  'ElIconApple': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Apple']
+  'ElTreeV2': typeof import("../../node_modules/element-plus/es/components/tree-v2/index")['ElTreeV2']
   'ElIconArrowDown': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ArrowDown']
   'ElIconArrowDownBold': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ArrowDownBold']
-  'ElIconApple': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Apple']
-  'ElIconArrowLeft': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ArrowLeft']
-  'ElIconArrowRight': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ArrowRight']
   'ElIconArrowUp': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ArrowUp']
-  'ElIconArrowLeftBold': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ArrowLeftBold']
-  'ElIconArrowRightBold': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ArrowRightBold']
-  'ElIconAvatar': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Avatar']
-  'ElIconBack': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Back']
+  'ElUpload': typeof import("../../node_modules/element-plus/es/components/upload/index")['ElUpload']
   'ElIconArrowUpBold': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ArrowUpBold']
-  'ElTimePicker': typeof import("../../node_modules/element-plus/es/components/time-picker/index")['ElTimePicker']
-  'ElIconBasketball': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Basketball']
-  'ElIconBaseball': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Baseball']
-  'ElIconBell': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Bell']
-  'ElText': typeof import("../../node_modules/element-plus/es/components/text/index")['ElText']
-  'ElIconBellFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['BellFilled']
-  'ElIconBottom': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Bottom']
   'ElWatermark': typeof import("../../node_modules/element-plus/es/components/watermark/index")['ElWatermark']
-  'ElPopconfirm': typeof import("../../node_modules/element-plus/es/components/popconfirm/index")['ElPopconfirm']
+  'ElIconArrowRight': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ArrowRight']
+  'ElIconAvatar': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Avatar']
+  'ElIconBaseball': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Baseball']
+  'ElIconArrowLeftBold': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ArrowLeftBold']
+  'ElIconBell': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Bell']
+  'ElIconArrowRightBold': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ArrowRightBold']
+  'ElIconBack': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Back']
   'ElIconBicycle': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Bicycle']
-  'ElIconBox': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Box']
-  'ElIconBottomLeft': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['BottomLeft']
+  'ElIconBasketball': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Basketball']
+  'ElIconBottom': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Bottom']
+  'ElIconBowl': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Bowl']
   'ElIconBrush': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Brush']
-  'ElIconCalendar': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Calendar']
+  'ElIconBottomLeft': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['BottomLeft']
+  'ElIconBellFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['BellFilled']
+  'ElIconBox': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Box']
   'ElIconBriefcase': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Briefcase']
-  'ElIconCamera': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Camera']
+  'ElIconBottomRight': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['BottomRight']
+  'ElIconCalendar': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Calendar']
   'ElIconBrushFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['BrushFilled']
-  'ElIconCaretLeft': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CaretLeft']
-  'ElIconCaretBottom': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CaretBottom']
+  'ElIconBurger': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Burger']
   'ElIconCaretTop': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CaretTop']
+  'ElIconCamera': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Camera']
+  'ElIconCaretLeft': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CaretLeft']
   'ElIconCaretRight': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CaretRight']
   'ElIconCameraFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CameraFilled']
+  'ElIconCaretBottom': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CaretBottom']
   'ElIconCellphone': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Cellphone']
   'ElIconChatDotRound': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ChatDotRound']
-  'ElIconBottomRight': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['BottomRight']
   'ElIconChatLineRound': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ChatLineRound']
-  'ElIconBowl': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Bowl']
-  'ElIconBurger': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Burger']
+  'ElIconChatDotSquare': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ChatDotSquare']
+  'ElIconCheck': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Check']
   'ElIconChatLineSquare': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ChatLineSquare']
   'ElIconChatRound': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ChatRound']
-  'ElIconChecked': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Checked']
-  'ElIconCheck': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Check']
-  'ElIconChatDotSquare': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ChatDotSquare']
-  'ElIconCherry': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Cherry']
-  'ElIconCircleCheck': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CircleCheck']
   'ElIconChromeFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ChromeFilled']
+  'ElIconChecked': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Checked']
+  'ElIconCircleCheck': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CircleCheck']
+  'ElIconCircleCheckFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CircleCheckFilled']
   'ElIconChatSquare': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ChatSquare']
-  'ElIconCirclePlusFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CirclePlusFilled']
   'ElIconChicken': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Chicken']
+  'ElIconCircleClose': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CircleClose']
   'ElIconCircleCloseFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CircleCloseFilled']
+  'ElIconCirclePlus': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CirclePlus']
+  'ElIconCirclePlusFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CirclePlusFilled']
+  'ElIconCherry': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Cherry']
+  'ElIconCoffee': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Coffee']
   'ElIconCloudy': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Cloudy']
   'ElIconClock': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Clock']
+  'ElIconCoin': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Coin']
+  'ElIconCollection': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Collection']
   'ElIconClose': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Close']
   'ElIconCloseBold': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CloseBold']
-  'ElIconCoffee': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Coffee']
-  'ElIconCoffeeCup': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CoffeeCup']
-  'ElIconCoin': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Coin']
-  'ElIconColdDrink': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ColdDrink']
-  'ElIconCollectionTag': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CollectionTag']
   'ElIconCompass': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Compass']
-  'ElIconCollection': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Collection']
-  'ElIconComment': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Comment']
-  'ElIconConnection': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Connection']
-  'ElIconCopyDocument': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CopyDocument']
-  'ElIconCoordinate': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Coordinate']
-  'ElIconCircleCheckFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CircleCheckFilled']
-  'ElIconCircleClose': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CircleClose']
-  'ElIconCirclePlus': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CirclePlus']
+  'ElIconCoffeeCup': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CoffeeCup']
+  'ElIconColdDrink': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ColdDrink']
   'ElIconCreditCard': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CreditCard']
-  'ElIconCpu': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Cpu']
+  'ElIconCollectionTag': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CollectionTag']
+  'ElIconConnection': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Connection']
+  'ElIconComment': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Comment']
+  'ElIconCoordinate': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Coordinate']
+  'ElIconDataAnalysis': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DataAnalysis']
   'ElIconDArrowRight': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DArrowRight']
+  'ElIconCopyDocument': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CopyDocument']
+  'ElIconDataLine': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DataLine']
   'ElIconCrop': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Crop']
+  'ElIconDArrowLeft': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DArrowLeft']
+  'ElIconCpu': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Cpu']
+  'ElIconDataBoard': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DataBoard']
   'ElIconDCaret': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DCaret']
   'ElIconDelete': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Delete']
-  'ElIconDataBoard': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DataBoard']
-  'ElIconDataLine': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DataLine']
-  'ElIconDArrowLeft': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DArrowLeft']
-  'ElIconDataAnalysis': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DataAnalysis']
   'ElIconDeleteFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DeleteFilled']
-  'ElIconDiscount': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Discount']
-  'ElIconDessert': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Dessert']
-  'ElIconDeleteLocation': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DeleteLocation']
-  'ElIconDishDot': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DishDot']
   'ElIconDish': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Dish']
   'ElIconDocument': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Document']
+  'ElIconDeleteLocation': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DeleteLocation']
+  'ElIconDiscount': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Discount']
+  'ElIconDessert': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Dessert']
   'ElIconDocumentAdd': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DocumentAdd']
+  'ElIconDishDot': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DishDot']
   'ElIconDocumentChecked': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DocumentChecked']
-  'ElIconDocumentCopy': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DocumentCopy']
   'ElIconDocumentDelete': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DocumentDelete']
-  'ElIconDocumentRemove': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DocumentRemove']
   'ElIconDownload': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Download']
+  'ElIconDocumentCopy': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DocumentCopy']
   'ElIconDrizzling': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Drizzling']
-  'ElIconEdit': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Edit']
   'ElIconEditPen': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['EditPen']
-  'ElIconEleme': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Eleme']
-  'ElIconElementPlus': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ElementPlus']
-  'ElIconElemeFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ElemeFilled']
+  'ElIconDocumentRemove': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DocumentRemove']
   'ElIconFailed': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Failed']
-  'ElIconFemale': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Female']
+  'ElIconEleme': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Eleme']
+  'ElIconElemeFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ElemeFilled']
+  'ElIconEdit': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Edit']
   'ElIconExpand': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Expand']
-  'ElIconFilter': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Filter']
-  'ElIconFinished': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Finished']
+  'ElIconFemale': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Female']
+  'ElIconElementPlus': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ElementPlus']
   'ElIconFilm': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Film']
-  'ElIconFiles': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Files']
   'ElIconFirstAidKit': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['FirstAidKit']
-  'ElIconFold': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Fold']
   'ElIconFlag': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Flag']
+  'ElIconFiles': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Files']
   'ElIconFolderAdd': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['FolderAdd']
   'ElIconFolderChecked': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['FolderChecked']
+  'ElIconFilter': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Filter']
+  'ElIconFold': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Fold']
   'ElIconFolderDelete': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['FolderDelete']
-  'ElIconFolderOpened': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['FolderOpened']
+  'ElIconFinished': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Finished']
+  'ElIconFullScreen': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['FullScreen']
   'ElIconFolder': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Folder']
   'ElIconFolderRemove': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['FolderRemove']
+  'ElIconFolderOpened': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['FolderOpened']
   'ElIconFood': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Food']
-  'ElIconFootball': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Football']
-  'ElIconForkSpoon': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ForkSpoon']
-  'ElIconFries': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Fries']
-  'ElIconFullScreen': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['FullScreen']
   'ElIconGoblet': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Goblet']
-  'ElIconGobletFull': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['GobletFull']
-  'ElIconGobletSquare': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['GobletSquare']
-  'ElIconGobletSquareFull': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['GobletSquareFull']
+  'ElIconFries': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Fries']
   'ElIconGoldMedal': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['GoldMedal']
-  'ElIconGoodsFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['GoodsFilled']
+  'ElIconFootball': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Football']
+  'ElIconGobletSquare': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['GobletSquare']
+  'ElIconGobletFull': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['GobletFull']
   'ElIconGrape': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Grape']
   'ElIconGoods': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Goods']
-  'ElIconGrid': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Grid']
-  'ElIconHandbag': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Handbag']
-  'ElIconGuide': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Guide']
+  'ElIconGoodsFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['GoodsFilled']
+  'ElIconForkSpoon': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ForkSpoon']
+  'ElIconGobletSquareFull': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['GobletSquareFull']
   'ElIconHeadset': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Headset']
   'ElIconHelp': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Help']
+  'ElIconHistogram': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Histogram']
+  'ElIconHandbag': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Handbag']
   'ElIconHide': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Hide']
   'ElIconHelpFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['HelpFilled']
-  'ElIconHistogram': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Histogram']
+  'ElIconGuide': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Guide']
   'ElIconHomeFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['HomeFilled']
+  'ElIconGrid': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Grid']
+  'ElIconIceCreamSquare': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['IceCreamSquare']
+  'ElIconIceTea': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['IceTea']
   'ElIconHouse': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['House']
   'ElIconHotWater': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['HotWater']
-  'ElIconIceCream': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['IceCream']
-  'ElIconIceCreamSquare': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['IceCreamSquare']
-  'ElIconIceCreamRound': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['IceCreamRound']
   'ElIconIceDrink': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['IceDrink']
-  'ElIconIceTea': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['IceTea']
-  'ElIconInfoFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['InfoFilled']
+  'ElIconIceCreamRound': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['IceCreamRound']
+  'ElIconIceCream': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['IceCream']
+  'ElIconKnifeFork': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['KnifeFork']
   'ElIconIphone': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Iphone']
   'ElIconKey': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Key']
-  'ElIconKnifeFork': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['KnifeFork']
-  'ElIconLightning': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Lightning']
-  'ElIconList': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['List']
   'ElIconLink': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Link']
-  'ElIconLoading': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Loading']
-  'ElIconLocation': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Location']
+  'ElIconLightning': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Lightning']
+  'ElIconInfoFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['InfoFilled']
+  'ElIconList': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['List']
   'ElIconLocationFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['LocationFilled']
   'ElIconLocationInformation': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['LocationInformation']
-  'ElIconLock': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Lock']
-  'ElIconLollipop': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Lollipop']
-  'ElIconMagicStick': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['MagicStick']
+  'ElIconLoading': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Loading']
   'ElIconMagnet': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Magnet']
-  'ElIconMale': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Male']
-  'ElIconManagement': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Management']
-  'ElIconMapLocation': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['MapLocation']
-  'ElIconMedal': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Medal']
+  'ElIconLocation': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Location']
+  'ElIconMagicStick': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['MagicStick']
+  'ElIconLock': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Lock']
   'ElIconMemo': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Memo']
-  'ElIconMenu': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Menu']
+  'ElIconLollipop': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Lollipop']
+  'ElIconManagement': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Management']
+  'ElIconMale': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Male']
   'ElIconMessage': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Message']
   'ElIconMessageBox': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['MessageBox']
+  'ElIconMenu': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Menu']
   'ElIconMic': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Mic']
-  'ElIconMicrophone': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Microphone']
   'ElIconMilkTea': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['MilkTea']
+  'ElIconMedal': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Medal']
   'ElIconMinus': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Minus']
-  'ElIconMonitor': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Monitor']
+  'ElIconMapLocation': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['MapLocation']
+  'ElIconMicrophone': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Microphone']
+  'ElIconNotebook': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Notebook']
   'ElIconMoney': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Money']
-  'ElIconMoon': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Moon']
-  'ElIconMoonNight': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['MoonNight']
   'ElIconMore': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['More']
+  'ElIconMonitor': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Monitor']
   'ElIconMostlyCloudy': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['MostlyCloudy']
+  'ElIconMuteNotification': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['MuteNotification']
+  'ElIconMoon': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Moon']
+  'ElIconOdometer': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Odometer']
   'ElIconMouse': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Mouse']
   'ElIconMoreFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['MoreFilled']
-  'ElIconMute': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Mute']
-  'ElIconMuteNotification': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['MuteNotification']
-  'ElIconMug': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Mug']
+  'ElIconMoonNight': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['MoonNight']
   'ElIconNoSmoking': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['NoSmoking']
-  'ElIconNotebook': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Notebook']
+  'ElIconMug': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Mug']
   'ElIconOfficeBuilding': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['OfficeBuilding']
-  'ElIconNotification': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Notification']
-  'ElIconOdometer': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Odometer']
-  'ElIconOpen': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Open']
-  'ElIconOpportunity': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Opportunity']
   'ElIconOperation': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Operation']
+  'ElIconNotification': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Notification']
+  'ElIconMute': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Mute']
   'ElIconOrange': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Orange']
   'ElIconPaperclip': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Paperclip']
-  'ElIconPear': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Pear']
   'ElIconPhone': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Phone']
-  'ElIconPhoneFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['PhoneFilled']
+  'ElIconOpen': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Open']
+  'ElIconPartlyCloudy': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['PartlyCloudy']
+  'ElIconOpportunity': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Opportunity']
   'ElIconPicture': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Picture']
   'ElIconPictureFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['PictureFilled']
   'ElIconPictureRounded': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['PictureRounded']
-  'ElIconPieChart': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['PieChart']
-  'ElIconPlace': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Place']
-  'ElIconPartlyCloudy': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['PartlyCloudy']
+  'ElIconPhoneFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['PhoneFilled']
+  'ElIconPear': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Pear']
   'ElIconPlatform': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Platform']
-  'ElIconPlus': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Plus']
   'ElIconPointer': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Pointer']
-  'ElIconPosition': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Position']
   'ElIconPostcard': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Postcard']
-  'ElIconPresent': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Present']
-  'ElIconPrinter': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Printer']
-  'ElIconPouring': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Pouring']
-  'ElIconQuartzWatch': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['QuartzWatch']
-  'ElIconRank': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Rank']
-  'ElIconQuestionFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['QuestionFilled']
-  'ElIconPromotion': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Promotion']
+  'ElIconPlace': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Place']
+  'ElIconPosition': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Position']
+  'ElIconPieChart': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['PieChart']
+  'ElIconPlus': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Plus']
   'ElIconPriceTag': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['PriceTag']
+  'ElIconPouring': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Pouring']
+  'ElIconRefreshLeft': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['RefreshLeft']
+  'ElIconPrinter': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Printer']
+  'ElIconPromotion': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Promotion']
+  'ElIconQuartzWatch': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['QuartzWatch']
+  'ElIconQuestionFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['QuestionFilled']
+  'ElIconReadingLamp': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ReadingLamp']
+  'ElIconPresent': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Present']
+  'ElIconRefreshRight': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['RefreshRight']
   'ElIconReading': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Reading']
   'ElIconRefresh': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Refresh']
-  'ElIconRefreshLeft': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['RefreshLeft']
-  'ElIconRefrigerator': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Refrigerator']
-  'ElIconRemove': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Remove']
-  'ElIconRefreshRight': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['RefreshRight']
-  'ElIconRight': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Right']
-  'ElIconReadingLamp': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ReadingLamp']
-  'ElIconSchool': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['School']
-  'ElIconRemoveFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['RemoveFilled']
-  'ElIconScissor': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Scissor']
-  'ElIconSelect': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Select']
+  'ElIconRank': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Rank']
   'ElIconScaleToOriginal': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ScaleToOriginal']
-  'ElIconSell': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Sell']
+  'ElIconRight': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Right']
+  'ElIconRefrigerator': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Refrigerator']
+  'ElIconScissor': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Scissor']
+  'ElIconSchool': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['School']
+  'ElIconRemove': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Remove']
+  'ElIconRemoveFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['RemoveFilled']
   'ElIconSearch': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Search']
-  'ElIconSetUp': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['SetUp']
-  'ElIconSemiSelect': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['SemiSelect']
+  'ElIconSelect': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Select']
   'ElIconService': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Service']
-  'ElIconShare': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Share']
+  'ElIconSemiSelect': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['SemiSelect']
   'ElIconSetting': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Setting']
+  'ElIconSetUp': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['SetUp']
+  'ElIconSell': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Sell']
+  'ElIconShare': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Share']
   'ElIconShip': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Ship']
-  'ElIconShoppingCart': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ShoppingCart']
-  'ElIconShop': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Shop']
   'ElIconShoppingBag': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ShoppingBag']
+  'ElIconShop': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Shop']
   'ElIconShoppingCartFull': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ShoppingCartFull']
-  'ElIconShoppingTrolley': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ShoppingTrolley']
-  'ElIconSoldOut': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['SoldOut']
   'ElIconSmoking': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Smoking']
-  'ElIconSoccer': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Soccer']
-  'ElIconSort': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Sort']
-  'ElIconSortDown': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['SortDown']
-  'ElIconStar': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Star']
+  'ElIconShoppingTrolley': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ShoppingTrolley']
   'ElIconStarFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['StarFilled']
+  'ElIconShoppingCart': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ShoppingCart']
+  'ElIconSoldOut': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['SoldOut']
+  'ElIconSoccer': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Soccer']
+  'ElIconSortDown': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['SortDown']
+  'ElIconSort': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Sort']
   'ElIconSortUp': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['SortUp']
-  'ElIconStopwatch': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Stopwatch']
-  'ElIconSuitcase': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Suitcase']
+  'ElIconStar': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Star']
   'ElIconSuccessFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['SuccessFilled']
   'ElIconSugar': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Sugar']
-  'ElIconSunny': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Sunny']
-  'ElIconSunset': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Sunset']
-  'ElIconSwitch': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Switch']
+  'ElIconStopwatch': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Stopwatch']
+  'ElIconStamp': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Stamp']
   'ElIconSuitcaseLine': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['SuitcaseLine']
-  'ElIconSunrise': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Sunrise']
+  'ElIconSuitcase': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Suitcase']
+  'ElIconSunny': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Sunny']
   'ElIconSwitchButton': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['SwitchButton']
   'ElIconTicket': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Ticket']
   'ElIconSwitchFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['SwitchFilled']
+  'ElIconSunset': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Sunset']
+  'ElIconSwitch': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Switch']
+  'ElIconTickets': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Tickets']
+  'ElIconSunrise': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Sunrise']
   'ElIconTimer': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Timer']
+  'ElIconTop': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Top']
   'ElIconTakeawayBox': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['TakeawayBox']
   'ElIconTools': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Tools']
-  'ElIconTop': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Top']
-  'ElIconTopLeft': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['TopLeft']
   'ElIconTopRight': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['TopRight']
-  'ElIconTickets': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Tickets']
   'ElIconToiletPaper': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ToiletPaper']
-  'ElIconTrophyBase': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['TrophyBase']
-  'ElIconTurnOff': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['TurnOff']
-  'ElIconUmbrella': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Umbrella']
+  'ElIconTopLeft': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['TopLeft']
   'ElIconTrendCharts': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['TrendCharts']
-  'ElIconUpload': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Upload']
-  'ElIconTrophy': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Trophy']
-  'ElIconUnlock': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Unlock']
-  'ElIconUploadFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['UploadFilled']
-  'ElIconStamp': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Stamp']
   'ElIconUser': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['User']
-  'ElIconUserFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['UserFilled']
-  'ElIconVan': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Van']
-  'ElIconVideoCamera': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['VideoCamera']
+  'ElIconTurnOff': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['TurnOff']
+  'ElIconTrophyBase': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['TrophyBase']
+  'ElIconUnlock': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Unlock']
+  'ElIconUmbrella': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Umbrella']
+  'ElIconTrophy': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Trophy']
   'ElIconVideoCameraFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['VideoCameraFilled']
-  'ElIconVideoPause': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['VideoPause']
+  'ElIconUpload': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Upload']
+  'ElIconUserFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['UserFilled']
+  'ElIconUploadFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['UploadFilled']
+  'ElIconVan': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Van']
   'ElIconVideoPlay': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['VideoPlay']
+  'ElIconVideoPause': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['VideoPause']
+  'ElIconVideoCamera': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['VideoCamera']
+  'ElIconWarnTriangleFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['WarnTriangleFilled']
   'ElIconView': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['View']
   'ElIconWalletFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['WalletFilled']
+  'ElIconWindPower': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['WindPower']
+  'ElIconWarningFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['WarningFilled']
   'ElIconWallet': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Wallet']
   'ElIconWarning': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Warning']
-  'ElIconWarnTriangleFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['WarnTriangleFilled']
-  'ElIconWatermelon': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Watermelon']
-  'ElIconWatch': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Watch']
-  'ElIconZoomIn': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ZoomIn']
-  'ElIconWarningFilled': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['WarningFilled']
-  'ElIconWindPower': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['WindPower']
   'ElIconZoomOut': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ZoomOut']
+  'ElIconWatch': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Watch']
+  'ElIconWatermelon': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Watermelon']
+  'ElIconZoomIn': typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ZoomIn']
   'NuxtPage': typeof import("../../node_modules/nuxt/dist/pages/runtime/page")['default']
   'NoScript': typeof import("../../node_modules/nuxt/dist/head/runtime/components")['NoScript']
   'Link': typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Link']
@@ -443,6 +450,13 @@ interface _GlobalComponents {
   'Html': typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Html']
   'Body': typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Body']
   'NuxtIsland': typeof import("../../node_modules/nuxt/dist/app/components/nuxt-island")['default']
+  'LazyBasicInfoForm': LazyComponent<typeof import("../../components/BasicInfoForm.vue")['default']>
+  'LazyModuleForm': LazyComponent<typeof import("../../components/ModuleForm.vue")['default']>
+  'LazyModuleSelector': LazyComponent<typeof import("../../components/ModuleSelector.vue")['default']>
+  'LazyModuleSelectorAndForm': LazyComponent<typeof import("../../components/ModuleSelectorAndForm.vue")['default']>
+  'LazyResumeForm': LazyComponent<typeof import("../../components/ResumeForm.vue")['default']>
+  'LazyResumePreview': LazyComponent<typeof import("../../components/ResumePreview.vue")['default']>
+  'LazyTemplateSelector': LazyComponent<typeof import("../../components/TemplateSelector.vue")['default']>
   'LazyNuxtWelcome': LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
   'LazyNuxtLayout': LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
   'LazyNuxtErrorBoundary': LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>
@@ -457,410 +471,410 @@ interface _GlobalComponents {
   'LazyNuxtPicture': LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-stubs")['NuxtPicture']>
   'LazyElAffix': LazyComponent<typeof import("../../node_modules/element-plus/es/components/affix/index")['ElAffix']>
   'LazyElAlert': LazyComponent<typeof import("../../node_modules/element-plus/es/components/alert/index")['ElAlert']>
-  'LazyElAnchor': LazyComponent<typeof import("../../node_modules/element-plus/es/components/anchor/index")['ElAnchor']>
   'LazyElAnchorLink': LazyComponent<typeof import("../../node_modules/element-plus/es/components/anchor/index")['ElAnchorLink']>
+  'LazyElAnchor': LazyComponent<typeof import("../../node_modules/element-plus/es/components/anchor/index")['ElAnchor']>
   'LazyElAutoResizer': LazyComponent<typeof import("../../node_modules/element-plus/es/components/table-v2/index")['ElAutoResizer']>
   'LazyElAside': LazyComponent<typeof import("../../node_modules/element-plus/es/components/container/index")['ElAside']>
-  'LazyElAutocomplete': LazyComponent<typeof import("../../node_modules/element-plus/es/components/autocomplete/index")['ElAutocomplete']>
-  'LazyElBacktop': LazyComponent<typeof import("../../node_modules/element-plus/es/components/backtop/index")['ElBacktop']>
   'LazyElAvatar': LazyComponent<typeof import("../../node_modules/element-plus/es/components/avatar/index")['ElAvatar']>
+  'LazyElAutocomplete': LazyComponent<typeof import("../../node_modules/element-plus/es/components/autocomplete/index")['ElAutocomplete']>
+  'LazyElBadge': LazyComponent<typeof import("../../node_modules/element-plus/es/components/badge/index")['ElBadge']>
+  'LazyElBacktop': LazyComponent<typeof import("../../node_modules/element-plus/es/components/backtop/index")['ElBacktop']>
   'LazyElBreadcrumb': LazyComponent<typeof import("../../node_modules/element-plus/es/components/breadcrumb/index")['ElBreadcrumb']>
   'LazyElBreadcrumbItem': LazyComponent<typeof import("../../node_modules/element-plus/es/components/breadcrumb/index")['ElBreadcrumbItem']>
-  'LazyElBadge': LazyComponent<typeof import("../../node_modules/element-plus/es/components/badge/index")['ElBadge']>
-  'LazyElCalendar': LazyComponent<typeof import("../../node_modules/element-plus/es/components/calendar/index")['ElCalendar']>
   'LazyElButtonGroup': LazyComponent<typeof import("../../node_modules/element-plus/es/components/button/index")['ElButtonGroup']>
+  'LazyElCalendar': LazyComponent<typeof import("../../node_modules/element-plus/es/components/calendar/index")['ElCalendar']>
   'LazyElButton': LazyComponent<typeof import("../../node_modules/element-plus/es/components/button/index")['ElButton']>
   'LazyElCarousel': LazyComponent<typeof import("../../node_modules/element-plus/es/components/carousel/index")['ElCarousel']>
+  'LazyElCard': LazyComponent<typeof import("../../node_modules/element-plus/es/components/card/index")['ElCard']>
   'LazyElCarouselItem': LazyComponent<typeof import("../../node_modules/element-plus/es/components/carousel/index")['ElCarouselItem']>
   'LazyElCascader': LazyComponent<typeof import("../../node_modules/element-plus/es/components/cascader/index")['ElCascader']>
-  'LazyElCheckTag': LazyComponent<typeof import("../../node_modules/element-plus/es/components/check-tag/index")['ElCheckTag']>
   'LazyElCascaderPanel': LazyComponent<typeof import("../../node_modules/element-plus/es/components/cascader-panel/index")['ElCascaderPanel']>
   'LazyElCheckbox': LazyComponent<typeof import("../../node_modules/element-plus/es/components/checkbox/index")['ElCheckbox']>
   'LazyElCheckboxGroup': LazyComponent<typeof import("../../node_modules/element-plus/es/components/checkbox/index")['ElCheckboxGroup']>
+  'LazyElCheckTag': LazyComponent<typeof import("../../node_modules/element-plus/es/components/check-tag/index")['ElCheckTag']>
   'LazyElCheckboxButton': LazyComponent<typeof import("../../node_modules/element-plus/es/components/checkbox/index")['ElCheckboxButton']>
-  'LazyElCard': LazyComponent<typeof import("../../node_modules/element-plus/es/components/card/index")['ElCard']>
   'LazyElCol': LazyComponent<typeof import("../../node_modules/element-plus/es/components/col/index")['ElCol']>
   'LazyElCollapse': LazyComponent<typeof import("../../node_modules/element-plus/es/components/collapse/index")['ElCollapse']>
-  'LazyElColorPicker': LazyComponent<typeof import("../../node_modules/element-plus/es/components/color-picker/index")['ElColorPicker']>
   'LazyElCollapseTransition': LazyComponent<typeof import("../../node_modules/element-plus/es/components/collapse-transition/index")['ElCollapseTransition']>
-  'LazyElColorPickerPanel': LazyComponent<typeof import("../../node_modules/element-plus/es/components/color-picker-panel/index")['ElColorPickerPanel']>
   'LazyElCollapseItem': LazyComponent<typeof import("../../node_modules/element-plus/es/components/collapse/index")['ElCollapseItem']>
-  'LazyElContainer': LazyComponent<typeof import("../../node_modules/element-plus/es/components/container/index")['ElContainer']>
-  'LazyElDatePicker': LazyComponent<typeof import("../../node_modules/element-plus/es/components/date-picker/index")['ElDatePicker']>
+  'LazyElColorPicker': LazyComponent<typeof import("../../node_modules/element-plus/es/components/color-picker/index")['ElColorPicker']>
   'LazyElConfigProvider': LazyComponent<typeof import("../../node_modules/element-plus/es/components/config-provider/index")['ElConfigProvider']>
+  'LazyElContainer': LazyComponent<typeof import("../../node_modules/element-plus/es/components/container/index")['ElContainer']>
   'LazyElCountdown': LazyComponent<typeof import("../../node_modules/element-plus/es/components/countdown/index")['ElCountdown']>
-  'LazyElDatePickerPanel': LazyComponent<typeof import("../../node_modules/element-plus/es/components/date-picker-panel/index")['ElDatePickerPanel']>
-  'LazyElDialog': LazyComponent<typeof import("../../node_modules/element-plus/es/components/dialog/index")['ElDialog']>
-  'LazyElDescriptions': LazyComponent<typeof import("../../node_modules/element-plus/es/components/descriptions/index")['ElDescriptions']>
+  'LazyElColorPickerPanel': LazyComponent<typeof import("../../node_modules/element-plus/es/components/color-picker-panel/index")['ElColorPickerPanel']>
+  'LazyElDatePicker': LazyComponent<typeof import("../../node_modules/element-plus/es/components/date-picker/index")['ElDatePicker']>
   'LazyElDescriptionsItem': LazyComponent<typeof import("../../node_modules/element-plus/es/components/descriptions/index")['ElDescriptionsItem']>
+  'LazyElDatePickerPanel': LazyComponent<typeof import("../../node_modules/element-plus/es/components/date-picker-panel/index")['ElDatePickerPanel']>
   'LazyElDivider': LazyComponent<typeof import("../../node_modules/element-plus/es/components/divider/index")['ElDivider']>
-  'LazyElDropdownItem': LazyComponent<typeof import("../../node_modules/element-plus/es/components/dropdown/index")['ElDropdownItem']>
+  'LazyElDescriptions': LazyComponent<typeof import("../../node_modules/element-plus/es/components/descriptions/index")['ElDescriptions']>
+  'LazyElDialog': LazyComponent<typeof import("../../node_modules/element-plus/es/components/dialog/index")['ElDialog']>
   'LazyElDrawer': LazyComponent<typeof import("../../node_modules/element-plus/es/components/drawer/index")['ElDrawer']>
-  'LazyElForm': LazyComponent<typeof import("../../node_modules/element-plus/es/components/form/index")['ElForm']>
   'LazyElDropdown': LazyComponent<typeof import("../../node_modules/element-plus/es/components/dropdown/index")['ElDropdown']>
-  'LazyElFooter': LazyComponent<typeof import("../../node_modules/element-plus/es/components/container/index")['ElFooter']>
+  'LazyElDropdownItem': LazyComponent<typeof import("../../node_modules/element-plus/es/components/dropdown/index")['ElDropdownItem']>
   'LazyElEmpty': LazyComponent<typeof import("../../node_modules/element-plus/es/components/empty/index")['ElEmpty']>
-  'LazyElFormItem': LazyComponent<typeof import("../../node_modules/element-plus/es/components/form/index")['ElFormItem']>
+  'LazyElFooter': LazyComponent<typeof import("../../node_modules/element-plus/es/components/container/index")['ElFooter']>
   'LazyElDropdownMenu': LazyComponent<typeof import("../../node_modules/element-plus/es/components/dropdown/index")['ElDropdownMenu']>
+  'LazyElFormItem': LazyComponent<typeof import("../../node_modules/element-plus/es/components/form/index")['ElFormItem']>
+  'LazyElForm': LazyComponent<typeof import("../../node_modules/element-plus/es/components/form/index")['ElForm']>
   'LazyElHeader': LazyComponent<typeof import("../../node_modules/element-plus/es/components/container/index")['ElHeader']>
   'LazyElIcon': LazyComponent<typeof import("../../node_modules/element-plus/es/components/icon/index")['ElIcon']>
   'LazyElImage': LazyComponent<typeof import("../../node_modules/element-plus/es/components/image/index")['ElImage']>
-  'LazyElInput': LazyComponent<typeof import("../../node_modules/element-plus/es/components/input/index")['ElInput']>
-  'LazyElInputNumber': LazyComponent<typeof import("../../node_modules/element-plus/es/components/input-number/index")['ElInputNumber']>
-  'LazyElInputTag': LazyComponent<typeof import("../../node_modules/element-plus/es/components/input-tag/index")['ElInputTag']>
   'LazyElImageViewer': LazyComponent<typeof import("../../node_modules/element-plus/es/components/image-viewer/index")['ElImageViewer']>
+  'LazyElInput': LazyComponent<typeof import("../../node_modules/element-plus/es/components/input/index")['ElInput']>
+  'LazyElInputTag': LazyComponent<typeof import("../../node_modules/element-plus/es/components/input-tag/index")['ElInputTag']>
+  'LazyElInputNumber': LazyComponent<typeof import("../../node_modules/element-plus/es/components/input-number/index")['ElInputNumber']>
   'LazyElLink': LazyComponent<typeof import("../../node_modules/element-plus/es/components/link/index")['ElLink']>
   'LazyElMain': LazyComponent<typeof import("../../node_modules/element-plus/es/components/container/index")['ElMain']>
-  'LazyElMenu': LazyComponent<typeof import("../../node_modules/element-plus/es/components/menu/index")['ElMenu']>
   'LazyElMention': LazyComponent<typeof import("../../node_modules/element-plus/es/components/mention/index")['ElMention']>
+  'LazyElMenu': LazyComponent<typeof import("../../node_modules/element-plus/es/components/menu/index")['ElMenu']>
+  'LazyElMenuItemGroup': LazyComponent<typeof import("../../node_modules/element-plus/es/components/menu/index")['ElMenuItemGroup']>
+  'LazyElOption': LazyComponent<typeof import("../../node_modules/element-plus/es/components/select/index")['ElOption']>
   'LazyElMenuItem': LazyComponent<typeof import("../../node_modules/element-plus/es/components/menu/index")['ElMenuItem']>
-  'LazyElPopover': LazyComponent<typeof import("../../node_modules/element-plus/es/components/popover/index")['ElPopover']>
+  'LazyElOptionGroup': LazyComponent<typeof import("../../node_modules/element-plus/es/components/select/index")['ElOptionGroup']>
+  'LazyElOverlay': LazyComponent<typeof import("../../node_modules/element-plus/es/components/overlay/index")['ElOverlay']>
   'LazyElPagination': LazyComponent<typeof import("../../node_modules/element-plus/es/components/pagination/index")['ElPagination']>
-  'LazyElPopper': LazyComponent<typeof import("../../node_modules/element-plus/es/components/popper/index")['ElPopper']>
+  'LazyElPopover': LazyComponent<typeof import("../../node_modules/element-plus/es/components/popover/index")['ElPopover']>
+  'LazyElPageHeader': LazyComponent<typeof import("../../node_modules/element-plus/es/components/page-header/index")['ElPageHeader']>
+  'LazyElPopconfirm': LazyComponent<typeof import("../../node_modules/element-plus/es/components/popconfirm/index")['ElPopconfirm']>
   'LazyElPopperContent': LazyComponent<typeof import("../../node_modules/element-plus/es/components/popper/index")['ElPopperContent']>
   'LazyElPopperArrow': LazyComponent<typeof import("../../node_modules/element-plus/es/components/popper/index")['ElPopperArrow']>
+  'LazyElPopper': LazyComponent<typeof import("../../node_modules/element-plus/es/components/popper/index")['ElPopper']>
   'LazyElPopperTrigger': LazyComponent<typeof import("../../node_modules/element-plus/es/components/popper/index")['ElPopperTrigger']>
-  'LazyElProgress': LazyComponent<typeof import("../../node_modules/element-plus/es/components/progress/index")['ElProgress']>
   'LazyElRadio': LazyComponent<typeof import("../../node_modules/element-plus/es/components/radio/index")['ElRadio']>
+  'LazyElProgress': LazyComponent<typeof import("../../node_modules/element-plus/es/components/progress/index")['ElProgress']>
   'LazyElRadioButton': LazyComponent<typeof import("../../node_modules/element-plus/es/components/radio/index")['ElRadioButton']>
-  'LazyElRadioGroup': LazyComponent<typeof import("../../node_modules/element-plus/es/components/radio/index")['ElRadioGroup']>
-  'LazyElRate': LazyComponent<typeof import("../../node_modules/element-plus/es/components/rate/index")['ElRate']>
   'LazyElResult': LazyComponent<typeof import("../../node_modules/element-plus/es/components/result/index")['ElResult']>
-  'LazyElRow': LazyComponent<typeof import("../../node_modules/element-plus/es/components/row/index")['ElRow']>
+  'LazyElRate': LazyComponent<typeof import("../../node_modules/element-plus/es/components/rate/index")['ElRate']>
+  'LazyElRadioGroup': LazyComponent<typeof import("../../node_modules/element-plus/es/components/radio/index")['ElRadioGroup']>
   'LazyElScrollbar': LazyComponent<typeof import("../../node_modules/element-plus/es/components/scrollbar/index")['ElScrollbar']>
+  'LazyElRow': LazyComponent<typeof import("../../node_modules/element-plus/es/components/row/index")['ElRow']>
   'LazyElSegmented': LazyComponent<typeof import("../../node_modules/element-plus/es/components/segmented/index")['ElSegmented']>
-  'LazyElSelectV2': LazyComponent<typeof import("../../node_modules/element-plus/es/components/select-v2/index")['ElSelectV2']>
   'LazyElSelect': LazyComponent<typeof import("../../node_modules/element-plus/es/components/select/index")['ElSelect']>
-  'LazyElSkeleton': LazyComponent<typeof import("../../node_modules/element-plus/es/components/skeleton/index")['ElSkeleton']>
-  'LazyElSkeletonItem': LazyComponent<typeof import("../../node_modules/element-plus/es/components/skeleton/index")['ElSkeletonItem']>
+  'LazyElSelectV2': LazyComponent<typeof import("../../node_modules/element-plus/es/components/select-v2/index")['ElSelectV2']>
   'LazyElSlider': LazyComponent<typeof import("../../node_modules/element-plus/es/components/slider/index")['ElSlider']>
-  'LazyElSpace': LazyComponent<typeof import("../../node_modules/element-plus/es/components/space/index")['ElSpace']>
+  'LazyElSkeletonItem': LazyComponent<typeof import("../../node_modules/element-plus/es/components/skeleton/index")['ElSkeletonItem']>
   'LazyElSplitter': LazyComponent<typeof import("../../node_modules/element-plus/es/components/splitter/index")['ElSplitter']>
   'LazyElSplitterPanel': LazyComponent<typeof import("../../node_modules/element-plus/es/components/splitter/index")['ElSplitterPanel']>
   'LazyElStep': LazyComponent<typeof import("../../node_modules/element-plus/es/components/steps/index")['ElStep']>
+  'LazyElSkeleton': LazyComponent<typeof import("../../node_modules/element-plus/es/components/skeleton/index")['ElSkeleton']>
+  'LazyElSpace': LazyComponent<typeof import("../../node_modules/element-plus/es/components/space/index")['ElSpace']>
   'LazyElStatistic': LazyComponent<typeof import("../../node_modules/element-plus/es/components/statistic/index")['ElStatistic']>
   'LazyElSteps': LazyComponent<typeof import("../../node_modules/element-plus/es/components/steps/index")['ElSteps']>
+  'LazyElTabPane': LazyComponent<typeof import("../../node_modules/element-plus/es/components/tabs/index")['ElTabPane']>
   'LazyElSubMenu': LazyComponent<typeof import("../../node_modules/element-plus/es/components/menu/index")['ElSubMenu']>
   'LazyElSwitch': LazyComponent<typeof import("../../node_modules/element-plus/es/components/switch/index")['ElSwitch']>
-  'LazyElTabPane': LazyComponent<typeof import("../../node_modules/element-plus/es/components/tabs/index")['ElTabPane']>
-  'LazyElTable': LazyComponent<typeof import("../../node_modules/element-plus/es/components/table/index")['ElTable']>
   'LazyElTableColumn': LazyComponent<typeof import("../../node_modules/element-plus/es/components/table/index")['ElTableColumn']>
-  'LazyElMenuItemGroup': LazyComponent<typeof import("../../node_modules/element-plus/es/components/menu/index")['ElMenuItemGroup']>
   'LazyElTableV2': LazyComponent<typeof import("../../node_modules/element-plus/es/components/table-v2/index")['ElTableV2']>
+  'LazyElText': LazyComponent<typeof import("../../node_modules/element-plus/es/components/text/index")['ElText']>
+  'LazyElTable': LazyComponent<typeof import("../../node_modules/element-plus/es/components/table/index")['ElTable']>
   'LazyElTabs': LazyComponent<typeof import("../../node_modules/element-plus/es/components/tabs/index")['ElTabs']>
   'LazyElTag': LazyComponent<typeof import("../../node_modules/element-plus/es/components/tag/index")['ElTag']>
-  'LazyElOption': LazyComponent<typeof import("../../node_modules/element-plus/es/components/select/index")['ElOption']>
-  'LazyElTimeSelect': LazyComponent<typeof import("../../node_modules/element-plus/es/components/time-select/index")['ElTimeSelect']>
-  'LazyElOverlay': LazyComponent<typeof import("../../node_modules/element-plus/es/components/overlay/index")['ElOverlay']>
+  'LazyElTimePicker': LazyComponent<typeof import("../../node_modules/element-plus/es/components/time-picker/index")['ElTimePicker']>
   'LazyElTimeline': LazyComponent<typeof import("../../node_modules/element-plus/es/components/timeline/index")['ElTimeline']>
-  'LazyElOptionGroup': LazyComponent<typeof import("../../node_modules/element-plus/es/components/select/index")['ElOptionGroup']>
-  'LazyElPageHeader': LazyComponent<typeof import("../../node_modules/element-plus/es/components/page-header/index")['ElPageHeader']>
+  'LazyElTimeSelect': LazyComponent<typeof import("../../node_modules/element-plus/es/components/time-select/index")['ElTimeSelect']>
   'LazyElTooltip': LazyComponent<typeof import("../../node_modules/element-plus/es/components/tooltip/index")['ElTooltip']>
-  'LazyElTimelineItem': LazyComponent<typeof import("../../node_modules/element-plus/es/components/timeline/index")['ElTimelineItem']>
   'LazyElTour': LazyComponent<typeof import("../../node_modules/element-plus/es/components/tour/index")['ElTour']>
-  'LazyElTransfer': LazyComponent<typeof import("../../node_modules/element-plus/es/components/transfer/index")['ElTransfer']>
+  'LazyElTimelineItem': LazyComponent<typeof import("../../node_modules/element-plus/es/components/timeline/index")['ElTimelineItem']>
   'LazyElTourStep': LazyComponent<typeof import("../../node_modules/element-plus/es/components/tour/index")['ElTourStep']>
-  'LazyElTree': LazyComponent<typeof import("../../node_modules/element-plus/es/components/tree/index")['ElTree']>
+  'LazyElTransfer': LazyComponent<typeof import("../../node_modules/element-plus/es/components/transfer/index")['ElTransfer']>
   'LazyElIconAddLocation': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['AddLocation']>
-  'LazyElTreeV2': LazyComponent<typeof import("../../node_modules/element-plus/es/components/tree-v2/index")['ElTreeV2']>
+  'LazyElTree': LazyComponent<typeof import("../../node_modules/element-plus/es/components/tree/index")['ElTree']>
   'LazyElIconAim': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Aim']>
   'LazyElTreeSelect': LazyComponent<typeof import("../../node_modules/element-plus/es/components/tree-select/index")['ElTreeSelect']>
-  'LazyElUpload': LazyComponent<typeof import("../../node_modules/element-plus/es/components/upload/index")['ElUpload']>
   'LazyElIconAlarmClock': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['AlarmClock']>
+  'LazyElIconArrowLeft': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ArrowLeft']>
+  'LazyElIconApple': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Apple']>
+  'LazyElTreeV2': LazyComponent<typeof import("../../node_modules/element-plus/es/components/tree-v2/index")['ElTreeV2']>
   'LazyElIconArrowDown': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ArrowDown']>
   'LazyElIconArrowDownBold': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ArrowDownBold']>
-  'LazyElIconApple': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Apple']>
-  'LazyElIconArrowLeft': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ArrowLeft']>
-  'LazyElIconArrowRight': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ArrowRight']>
   'LazyElIconArrowUp': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ArrowUp']>
-  'LazyElIconArrowLeftBold': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ArrowLeftBold']>
-  'LazyElIconArrowRightBold': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ArrowRightBold']>
-  'LazyElIconAvatar': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Avatar']>
-  'LazyElIconBack': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Back']>
+  'LazyElUpload': LazyComponent<typeof import("../../node_modules/element-plus/es/components/upload/index")['ElUpload']>
   'LazyElIconArrowUpBold': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ArrowUpBold']>
-  'LazyElTimePicker': LazyComponent<typeof import("../../node_modules/element-plus/es/components/time-picker/index")['ElTimePicker']>
-  'LazyElIconBasketball': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Basketball']>
-  'LazyElIconBaseball': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Baseball']>
-  'LazyElIconBell': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Bell']>
-  'LazyElText': LazyComponent<typeof import("../../node_modules/element-plus/es/components/text/index")['ElText']>
-  'LazyElIconBellFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['BellFilled']>
-  'LazyElIconBottom': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Bottom']>
   'LazyElWatermark': LazyComponent<typeof import("../../node_modules/element-plus/es/components/watermark/index")['ElWatermark']>
-  'LazyElPopconfirm': LazyComponent<typeof import("../../node_modules/element-plus/es/components/popconfirm/index")['ElPopconfirm']>
+  'LazyElIconArrowRight': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ArrowRight']>
+  'LazyElIconAvatar': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Avatar']>
+  'LazyElIconBaseball': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Baseball']>
+  'LazyElIconArrowLeftBold': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ArrowLeftBold']>
+  'LazyElIconBell': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Bell']>
+  'LazyElIconArrowRightBold': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ArrowRightBold']>
+  'LazyElIconBack': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Back']>
   'LazyElIconBicycle': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Bicycle']>
-  'LazyElIconBox': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Box']>
-  'LazyElIconBottomLeft': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['BottomLeft']>
+  'LazyElIconBasketball': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Basketball']>
+  'LazyElIconBottom': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Bottom']>
+  'LazyElIconBowl': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Bowl']>
   'LazyElIconBrush': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Brush']>
-  'LazyElIconCalendar': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Calendar']>
+  'LazyElIconBottomLeft': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['BottomLeft']>
+  'LazyElIconBellFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['BellFilled']>
+  'LazyElIconBox': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Box']>
   'LazyElIconBriefcase': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Briefcase']>
-  'LazyElIconCamera': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Camera']>
+  'LazyElIconBottomRight': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['BottomRight']>
+  'LazyElIconCalendar': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Calendar']>
   'LazyElIconBrushFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['BrushFilled']>
-  'LazyElIconCaretLeft': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CaretLeft']>
-  'LazyElIconCaretBottom': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CaretBottom']>
+  'LazyElIconBurger': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Burger']>
   'LazyElIconCaretTop': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CaretTop']>
+  'LazyElIconCamera': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Camera']>
+  'LazyElIconCaretLeft': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CaretLeft']>
   'LazyElIconCaretRight': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CaretRight']>
   'LazyElIconCameraFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CameraFilled']>
+  'LazyElIconCaretBottom': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CaretBottom']>
   'LazyElIconCellphone': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Cellphone']>
   'LazyElIconChatDotRound': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ChatDotRound']>
-  'LazyElIconBottomRight': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['BottomRight']>
   'LazyElIconChatLineRound': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ChatLineRound']>
-  'LazyElIconBowl': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Bowl']>
-  'LazyElIconBurger': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Burger']>
+  'LazyElIconChatDotSquare': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ChatDotSquare']>
+  'LazyElIconCheck': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Check']>
   'LazyElIconChatLineSquare': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ChatLineSquare']>
   'LazyElIconChatRound': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ChatRound']>
-  'LazyElIconChecked': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Checked']>
-  'LazyElIconCheck': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Check']>
-  'LazyElIconChatDotSquare': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ChatDotSquare']>
-  'LazyElIconCherry': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Cherry']>
-  'LazyElIconCircleCheck': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CircleCheck']>
   'LazyElIconChromeFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ChromeFilled']>
+  'LazyElIconChecked': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Checked']>
+  'LazyElIconCircleCheck': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CircleCheck']>
+  'LazyElIconCircleCheckFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CircleCheckFilled']>
   'LazyElIconChatSquare': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ChatSquare']>
-  'LazyElIconCirclePlusFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CirclePlusFilled']>
   'LazyElIconChicken': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Chicken']>
+  'LazyElIconCircleClose': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CircleClose']>
   'LazyElIconCircleCloseFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CircleCloseFilled']>
+  'LazyElIconCirclePlus': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CirclePlus']>
+  'LazyElIconCirclePlusFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CirclePlusFilled']>
+  'LazyElIconCherry': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Cherry']>
+  'LazyElIconCoffee': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Coffee']>
   'LazyElIconCloudy': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Cloudy']>
   'LazyElIconClock': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Clock']>
+  'LazyElIconCoin': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Coin']>
+  'LazyElIconCollection': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Collection']>
   'LazyElIconClose': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Close']>
   'LazyElIconCloseBold': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CloseBold']>
-  'LazyElIconCoffee': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Coffee']>
-  'LazyElIconCoffeeCup': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CoffeeCup']>
-  'LazyElIconCoin': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Coin']>
-  'LazyElIconColdDrink': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ColdDrink']>
-  'LazyElIconCollectionTag': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CollectionTag']>
   'LazyElIconCompass': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Compass']>
-  'LazyElIconCollection': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Collection']>
-  'LazyElIconComment': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Comment']>
-  'LazyElIconConnection': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Connection']>
-  'LazyElIconCopyDocument': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CopyDocument']>
-  'LazyElIconCoordinate': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Coordinate']>
-  'LazyElIconCircleCheckFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CircleCheckFilled']>
-  'LazyElIconCircleClose': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CircleClose']>
-  'LazyElIconCirclePlus': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CirclePlus']>
+  'LazyElIconCoffeeCup': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CoffeeCup']>
+  'LazyElIconColdDrink': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ColdDrink']>
   'LazyElIconCreditCard': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CreditCard']>
-  'LazyElIconCpu': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Cpu']>
+  'LazyElIconCollectionTag': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CollectionTag']>
+  'LazyElIconConnection': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Connection']>
+  'LazyElIconComment': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Comment']>
+  'LazyElIconCoordinate': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Coordinate']>
+  'LazyElIconDataAnalysis': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DataAnalysis']>
   'LazyElIconDArrowRight': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DArrowRight']>
+  'LazyElIconCopyDocument': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['CopyDocument']>
+  'LazyElIconDataLine': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DataLine']>
   'LazyElIconCrop': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Crop']>
+  'LazyElIconDArrowLeft': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DArrowLeft']>
+  'LazyElIconCpu': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Cpu']>
+  'LazyElIconDataBoard': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DataBoard']>
   'LazyElIconDCaret': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DCaret']>
   'LazyElIconDelete': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Delete']>
-  'LazyElIconDataBoard': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DataBoard']>
-  'LazyElIconDataLine': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DataLine']>
-  'LazyElIconDArrowLeft': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DArrowLeft']>
-  'LazyElIconDataAnalysis': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DataAnalysis']>
   'LazyElIconDeleteFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DeleteFilled']>
-  'LazyElIconDiscount': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Discount']>
-  'LazyElIconDessert': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Dessert']>
-  'LazyElIconDeleteLocation': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DeleteLocation']>
-  'LazyElIconDishDot': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DishDot']>
   'LazyElIconDish': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Dish']>
   'LazyElIconDocument': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Document']>
+  'LazyElIconDeleteLocation': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DeleteLocation']>
+  'LazyElIconDiscount': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Discount']>
+  'LazyElIconDessert': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Dessert']>
   'LazyElIconDocumentAdd': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DocumentAdd']>
+  'LazyElIconDishDot': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DishDot']>
   'LazyElIconDocumentChecked': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DocumentChecked']>
-  'LazyElIconDocumentCopy': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DocumentCopy']>
   'LazyElIconDocumentDelete': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DocumentDelete']>
-  'LazyElIconDocumentRemove': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DocumentRemove']>
   'LazyElIconDownload': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Download']>
+  'LazyElIconDocumentCopy': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DocumentCopy']>
   'LazyElIconDrizzling': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Drizzling']>
-  'LazyElIconEdit': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Edit']>
   'LazyElIconEditPen': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['EditPen']>
-  'LazyElIconEleme': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Eleme']>
-  'LazyElIconElementPlus': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ElementPlus']>
-  'LazyElIconElemeFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ElemeFilled']>
+  'LazyElIconDocumentRemove': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['DocumentRemove']>
   'LazyElIconFailed': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Failed']>
-  'LazyElIconFemale': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Female']>
+  'LazyElIconEleme': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Eleme']>
+  'LazyElIconElemeFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ElemeFilled']>
+  'LazyElIconEdit': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Edit']>
   'LazyElIconExpand': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Expand']>
-  'LazyElIconFilter': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Filter']>
-  'LazyElIconFinished': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Finished']>
+  'LazyElIconFemale': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Female']>
+  'LazyElIconElementPlus': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ElementPlus']>
   'LazyElIconFilm': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Film']>
-  'LazyElIconFiles': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Files']>
   'LazyElIconFirstAidKit': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['FirstAidKit']>
-  'LazyElIconFold': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Fold']>
   'LazyElIconFlag': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Flag']>
+  'LazyElIconFiles': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Files']>
   'LazyElIconFolderAdd': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['FolderAdd']>
   'LazyElIconFolderChecked': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['FolderChecked']>
+  'LazyElIconFilter': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Filter']>
+  'LazyElIconFold': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Fold']>
   'LazyElIconFolderDelete': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['FolderDelete']>
-  'LazyElIconFolderOpened': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['FolderOpened']>
+  'LazyElIconFinished': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Finished']>
+  'LazyElIconFullScreen': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['FullScreen']>
   'LazyElIconFolder': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Folder']>
   'LazyElIconFolderRemove': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['FolderRemove']>
+  'LazyElIconFolderOpened': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['FolderOpened']>
   'LazyElIconFood': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Food']>
-  'LazyElIconFootball': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Football']>
-  'LazyElIconForkSpoon': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ForkSpoon']>
-  'LazyElIconFries': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Fries']>
-  'LazyElIconFullScreen': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['FullScreen']>
   'LazyElIconGoblet': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Goblet']>
-  'LazyElIconGobletFull': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['GobletFull']>
-  'LazyElIconGobletSquare': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['GobletSquare']>
-  'LazyElIconGobletSquareFull': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['GobletSquareFull']>
+  'LazyElIconFries': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Fries']>
   'LazyElIconGoldMedal': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['GoldMedal']>
-  'LazyElIconGoodsFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['GoodsFilled']>
+  'LazyElIconFootball': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Football']>
+  'LazyElIconGobletSquare': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['GobletSquare']>
+  'LazyElIconGobletFull': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['GobletFull']>
   'LazyElIconGrape': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Grape']>
   'LazyElIconGoods': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Goods']>
-  'LazyElIconGrid': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Grid']>
-  'LazyElIconHandbag': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Handbag']>
-  'LazyElIconGuide': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Guide']>
+  'LazyElIconGoodsFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['GoodsFilled']>
+  'LazyElIconForkSpoon': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ForkSpoon']>
+  'LazyElIconGobletSquareFull': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['GobletSquareFull']>
   'LazyElIconHeadset': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Headset']>
   'LazyElIconHelp': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Help']>
+  'LazyElIconHistogram': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Histogram']>
+  'LazyElIconHandbag': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Handbag']>
   'LazyElIconHide': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Hide']>
   'LazyElIconHelpFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['HelpFilled']>
-  'LazyElIconHistogram': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Histogram']>
+  'LazyElIconGuide': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Guide']>
   'LazyElIconHomeFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['HomeFilled']>
+  'LazyElIconGrid': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Grid']>
+  'LazyElIconIceCreamSquare': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['IceCreamSquare']>
+  'LazyElIconIceTea': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['IceTea']>
   'LazyElIconHouse': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['House']>
   'LazyElIconHotWater': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['HotWater']>
-  'LazyElIconIceCream': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['IceCream']>
-  'LazyElIconIceCreamSquare': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['IceCreamSquare']>
-  'LazyElIconIceCreamRound': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['IceCreamRound']>
   'LazyElIconIceDrink': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['IceDrink']>
-  'LazyElIconIceTea': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['IceTea']>
-  'LazyElIconInfoFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['InfoFilled']>
+  'LazyElIconIceCreamRound': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['IceCreamRound']>
+  'LazyElIconIceCream': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['IceCream']>
+  'LazyElIconKnifeFork': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['KnifeFork']>
   'LazyElIconIphone': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Iphone']>
   'LazyElIconKey': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Key']>
-  'LazyElIconKnifeFork': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['KnifeFork']>
-  'LazyElIconLightning': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Lightning']>
-  'LazyElIconList': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['List']>
   'LazyElIconLink': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Link']>
-  'LazyElIconLoading': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Loading']>
-  'LazyElIconLocation': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Location']>
+  'LazyElIconLightning': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Lightning']>
+  'LazyElIconInfoFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['InfoFilled']>
+  'LazyElIconList': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['List']>
   'LazyElIconLocationFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['LocationFilled']>
   'LazyElIconLocationInformation': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['LocationInformation']>
-  'LazyElIconLock': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Lock']>
-  'LazyElIconLollipop': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Lollipop']>
-  'LazyElIconMagicStick': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['MagicStick']>
+  'LazyElIconLoading': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Loading']>
   'LazyElIconMagnet': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Magnet']>
-  'LazyElIconMale': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Male']>
-  'LazyElIconManagement': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Management']>
-  'LazyElIconMapLocation': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['MapLocation']>
-  'LazyElIconMedal': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Medal']>
+  'LazyElIconLocation': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Location']>
+  'LazyElIconMagicStick': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['MagicStick']>
+  'LazyElIconLock': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Lock']>
   'LazyElIconMemo': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Memo']>
-  'LazyElIconMenu': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Menu']>
+  'LazyElIconLollipop': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Lollipop']>
+  'LazyElIconManagement': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Management']>
+  'LazyElIconMale': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Male']>
   'LazyElIconMessage': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Message']>
   'LazyElIconMessageBox': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['MessageBox']>
+  'LazyElIconMenu': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Menu']>
   'LazyElIconMic': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Mic']>
-  'LazyElIconMicrophone': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Microphone']>
   'LazyElIconMilkTea': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['MilkTea']>
+  'LazyElIconMedal': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Medal']>
   'LazyElIconMinus': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Minus']>
-  'LazyElIconMonitor': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Monitor']>
+  'LazyElIconMapLocation': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['MapLocation']>
+  'LazyElIconMicrophone': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Microphone']>
+  'LazyElIconNotebook': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Notebook']>
   'LazyElIconMoney': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Money']>
-  'LazyElIconMoon': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Moon']>
-  'LazyElIconMoonNight': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['MoonNight']>
   'LazyElIconMore': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['More']>
+  'LazyElIconMonitor': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Monitor']>
   'LazyElIconMostlyCloudy': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['MostlyCloudy']>
+  'LazyElIconMuteNotification': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['MuteNotification']>
+  'LazyElIconMoon': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Moon']>
+  'LazyElIconOdometer': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Odometer']>
   'LazyElIconMouse': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Mouse']>
   'LazyElIconMoreFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['MoreFilled']>
-  'LazyElIconMute': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Mute']>
-  'LazyElIconMuteNotification': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['MuteNotification']>
-  'LazyElIconMug': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Mug']>
+  'LazyElIconMoonNight': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['MoonNight']>
   'LazyElIconNoSmoking': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['NoSmoking']>
-  'LazyElIconNotebook': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Notebook']>
+  'LazyElIconMug': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Mug']>
   'LazyElIconOfficeBuilding': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['OfficeBuilding']>
-  'LazyElIconNotification': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Notification']>
-  'LazyElIconOdometer': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Odometer']>
-  'LazyElIconOpen': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Open']>
-  'LazyElIconOpportunity': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Opportunity']>
   'LazyElIconOperation': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Operation']>
+  'LazyElIconNotification': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Notification']>
+  'LazyElIconMute': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Mute']>
   'LazyElIconOrange': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Orange']>
   'LazyElIconPaperclip': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Paperclip']>
-  'LazyElIconPear': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Pear']>
   'LazyElIconPhone': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Phone']>
-  'LazyElIconPhoneFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['PhoneFilled']>
+  'LazyElIconOpen': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Open']>
+  'LazyElIconPartlyCloudy': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['PartlyCloudy']>
+  'LazyElIconOpportunity': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Opportunity']>
   'LazyElIconPicture': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Picture']>
   'LazyElIconPictureFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['PictureFilled']>
   'LazyElIconPictureRounded': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['PictureRounded']>
-  'LazyElIconPieChart': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['PieChart']>
-  'LazyElIconPlace': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Place']>
-  'LazyElIconPartlyCloudy': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['PartlyCloudy']>
+  'LazyElIconPhoneFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['PhoneFilled']>
+  'LazyElIconPear': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Pear']>
   'LazyElIconPlatform': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Platform']>
-  'LazyElIconPlus': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Plus']>
   'LazyElIconPointer': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Pointer']>
-  'LazyElIconPosition': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Position']>
   'LazyElIconPostcard': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Postcard']>
-  'LazyElIconPresent': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Present']>
-  'LazyElIconPrinter': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Printer']>
-  'LazyElIconPouring': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Pouring']>
-  'LazyElIconQuartzWatch': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['QuartzWatch']>
-  'LazyElIconRank': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Rank']>
-  'LazyElIconQuestionFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['QuestionFilled']>
-  'LazyElIconPromotion': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Promotion']>
+  'LazyElIconPlace': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Place']>
+  'LazyElIconPosition': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Position']>
+  'LazyElIconPieChart': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['PieChart']>
+  'LazyElIconPlus': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Plus']>
   'LazyElIconPriceTag': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['PriceTag']>
+  'LazyElIconPouring': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Pouring']>
+  'LazyElIconRefreshLeft': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['RefreshLeft']>
+  'LazyElIconPrinter': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Printer']>
+  'LazyElIconPromotion': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Promotion']>
+  'LazyElIconQuartzWatch': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['QuartzWatch']>
+  'LazyElIconQuestionFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['QuestionFilled']>
+  'LazyElIconReadingLamp': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ReadingLamp']>
+  'LazyElIconPresent': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Present']>
+  'LazyElIconRefreshRight': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['RefreshRight']>
   'LazyElIconReading': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Reading']>
   'LazyElIconRefresh': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Refresh']>
-  'LazyElIconRefreshLeft': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['RefreshLeft']>
-  'LazyElIconRefrigerator': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Refrigerator']>
-  'LazyElIconRemove': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Remove']>
-  'LazyElIconRefreshRight': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['RefreshRight']>
-  'LazyElIconRight': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Right']>
-  'LazyElIconReadingLamp': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ReadingLamp']>
-  'LazyElIconSchool': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['School']>
-  'LazyElIconRemoveFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['RemoveFilled']>
-  'LazyElIconScissor': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Scissor']>
-  'LazyElIconSelect': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Select']>
+  'LazyElIconRank': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Rank']>
   'LazyElIconScaleToOriginal': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ScaleToOriginal']>
-  'LazyElIconSell': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Sell']>
+  'LazyElIconRight': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Right']>
+  'LazyElIconRefrigerator': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Refrigerator']>
+  'LazyElIconScissor': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Scissor']>
+  'LazyElIconSchool': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['School']>
+  'LazyElIconRemove': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Remove']>
+  'LazyElIconRemoveFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['RemoveFilled']>
   'LazyElIconSearch': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Search']>
-  'LazyElIconSetUp': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['SetUp']>
-  'LazyElIconSemiSelect': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['SemiSelect']>
+  'LazyElIconSelect': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Select']>
   'LazyElIconService': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Service']>
-  'LazyElIconShare': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Share']>
+  'LazyElIconSemiSelect': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['SemiSelect']>
   'LazyElIconSetting': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Setting']>
+  'LazyElIconSetUp': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['SetUp']>
+  'LazyElIconSell': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Sell']>
+  'LazyElIconShare': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Share']>
   'LazyElIconShip': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Ship']>
-  'LazyElIconShoppingCart': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ShoppingCart']>
-  'LazyElIconShop': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Shop']>
   'LazyElIconShoppingBag': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ShoppingBag']>
+  'LazyElIconShop': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Shop']>
   'LazyElIconShoppingCartFull': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ShoppingCartFull']>
-  'LazyElIconShoppingTrolley': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ShoppingTrolley']>
-  'LazyElIconSoldOut': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['SoldOut']>
   'LazyElIconSmoking': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Smoking']>
-  'LazyElIconSoccer': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Soccer']>
-  'LazyElIconSort': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Sort']>
-  'LazyElIconSortDown': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['SortDown']>
-  'LazyElIconStar': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Star']>
+  'LazyElIconShoppingTrolley': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ShoppingTrolley']>
   'LazyElIconStarFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['StarFilled']>
+  'LazyElIconShoppingCart': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ShoppingCart']>
+  'LazyElIconSoldOut': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['SoldOut']>
+  'LazyElIconSoccer': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Soccer']>
+  'LazyElIconSortDown': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['SortDown']>
+  'LazyElIconSort': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Sort']>
   'LazyElIconSortUp': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['SortUp']>
-  'LazyElIconStopwatch': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Stopwatch']>
-  'LazyElIconSuitcase': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Suitcase']>
+  'LazyElIconStar': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Star']>
   'LazyElIconSuccessFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['SuccessFilled']>
   'LazyElIconSugar': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Sugar']>
-  'LazyElIconSunny': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Sunny']>
-  'LazyElIconSunset': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Sunset']>
-  'LazyElIconSwitch': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Switch']>
+  'LazyElIconStopwatch': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Stopwatch']>
+  'LazyElIconStamp': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Stamp']>
   'LazyElIconSuitcaseLine': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['SuitcaseLine']>
-  'LazyElIconSunrise': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Sunrise']>
+  'LazyElIconSuitcase': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Suitcase']>
+  'LazyElIconSunny': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Sunny']>
   'LazyElIconSwitchButton': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['SwitchButton']>
   'LazyElIconTicket': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Ticket']>
   'LazyElIconSwitchFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['SwitchFilled']>
+  'LazyElIconSunset': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Sunset']>
+  'LazyElIconSwitch': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Switch']>
+  'LazyElIconTickets': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Tickets']>
+  'LazyElIconSunrise': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Sunrise']>
   'LazyElIconTimer': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Timer']>
+  'LazyElIconTop': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Top']>
   'LazyElIconTakeawayBox': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['TakeawayBox']>
   'LazyElIconTools': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Tools']>
-  'LazyElIconTop': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Top']>
-  'LazyElIconTopLeft': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['TopLeft']>
   'LazyElIconTopRight': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['TopRight']>
-  'LazyElIconTickets': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Tickets']>
   'LazyElIconToiletPaper': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ToiletPaper']>
-  'LazyElIconTrophyBase': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['TrophyBase']>
-  'LazyElIconTurnOff': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['TurnOff']>
-  'LazyElIconUmbrella': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Umbrella']>
+  'LazyElIconTopLeft': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['TopLeft']>
   'LazyElIconTrendCharts': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['TrendCharts']>
-  'LazyElIconUpload': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Upload']>
-  'LazyElIconTrophy': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Trophy']>
-  'LazyElIconUnlock': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Unlock']>
-  'LazyElIconUploadFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['UploadFilled']>
-  'LazyElIconStamp': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Stamp']>
   'LazyElIconUser': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['User']>
-  'LazyElIconUserFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['UserFilled']>
-  'LazyElIconVan': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Van']>
-  'LazyElIconVideoCamera': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['VideoCamera']>
+  'LazyElIconTurnOff': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['TurnOff']>
+  'LazyElIconTrophyBase': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['TrophyBase']>
+  'LazyElIconUnlock': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Unlock']>
+  'LazyElIconUmbrella': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Umbrella']>
+  'LazyElIconTrophy': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Trophy']>
   'LazyElIconVideoCameraFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['VideoCameraFilled']>
-  'LazyElIconVideoPause': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['VideoPause']>
+  'LazyElIconUpload': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Upload']>
+  'LazyElIconUserFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['UserFilled']>
+  'LazyElIconUploadFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['UploadFilled']>
+  'LazyElIconVan': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Van']>
   'LazyElIconVideoPlay': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['VideoPlay']>
+  'LazyElIconVideoPause': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['VideoPause']>
+  'LazyElIconVideoCamera': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['VideoCamera']>
+  'LazyElIconWarnTriangleFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['WarnTriangleFilled']>
   'LazyElIconView': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['View']>
   'LazyElIconWalletFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['WalletFilled']>
+  'LazyElIconWindPower': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['WindPower']>
+  'LazyElIconWarningFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['WarningFilled']>
   'LazyElIconWallet': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Wallet']>
   'LazyElIconWarning': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Warning']>
-  'LazyElIconWarnTriangleFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['WarnTriangleFilled']>
-  'LazyElIconWatermelon': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Watermelon']>
-  'LazyElIconWatch': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Watch']>
-  'LazyElIconZoomIn': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ZoomIn']>
-  'LazyElIconWarningFilled': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['WarningFilled']>
-  'LazyElIconWindPower': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['WindPower']>
   'LazyElIconZoomOut': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ZoomOut']>
+  'LazyElIconWatch': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Watch']>
+  'LazyElIconWatermelon': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['Watermelon']>
+  'LazyElIconZoomIn': LazyComponent<typeof import("../../node_modules/@element-plus/icons-vue/dist/index")['ZoomIn']>
   'LazyNuxtPage': LazyComponent<typeof import("../../node_modules/nuxt/dist/pages/runtime/page")['default']>
   'LazyNoScript': LazyComponent<typeof import("../../node_modules/nuxt/dist/head/runtime/components")['NoScript']>
   'LazyLink': LazyComponent<typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Link']>
